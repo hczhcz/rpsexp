@@ -6,6 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="content-language" content="zh-cn" />
     <meta name="author" content="hcz" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75">
 
     <!--[if lte IE 8]>
     <script src="html5.js"></script>
@@ -22,7 +23,7 @@
 
 <script src="game.js"></script>
 
-<div class="page" id="page1"><div class="intro" id="intro1"><div class="text">
+<div class="page" id="page1"><div class="widget intro" id="intro1"><div class="text">
     <h1>游戏说明</h1>
     <hr>
     <p>你将与至少<span id="xcomp"></span>个对手对战“石头剪刀布”</p>
@@ -31,7 +32,7 @@
     <p><i>（点击继续...）</i></p>
 </div></div></div>
 
-<div class="page" id="page2"><div class="intro" id="intro2"><div class="text">
+<div class="page" id="page2"><div class="widget intro" id="intro2"><div class="text">
     <h1>记住！有个小诀窍</h1>
     <hr>
     <p>你可能会多次遇到同一个对手，再次遇到时ta的出手动作是不会改变的</p>
@@ -42,17 +43,31 @@
 
 <div class="page" id="page3"><div class="question" id="question1">
     <div id="gameinfo">还有<span id="xcomp2"></span>/<span id="xcomp1"></span>个对手需要击败</div>
-    <div id="compinfo"><span id="xname"></span><span id="xwin"></span></div>
-    <div id="yourinfo"><span id="xname"></span><span id="xwin"></span></div>
-    <img id="compphoto"></img>
-    <img id="comphand" src="img/r.png">
-    <img id="yourhand" src="img/rr.png">
-    <img id="phand" src="img/pr.png">
-    <img id="shand" src="img/sr.png">
-    <img id="rhand" src="img/rr.png">
+    <div class="floatr postop" id="compinfo">
+        <h1 id="xname">对手</h1>
+        <span>&nbsp;</span>
+        <h1 id="xwin"></h1>
+        <span>&nbsp;</span>
+        <img class="smallimg" id="photo"></img>
+    </div>
+    <div class="poscenter">
+        <img class="handr" id="comphand" src="img/r.png">
+        <img class="handl" id="yourhand" src="img/rr.png">
+    </div>
+    <div class="floatl posbottom" id="yourinfo">
+        <img class="smallimg" id="phand" src="img/pr.png">
+        <span>&nbsp;</span>
+        <img class="smallimg" id="shand" src="img/sr.png">
+        <span>&nbsp;</span>
+        <img class="smallimg" id="rhand" src="img/rr.png">
+        <span>&nbsp;</span>
+        <h1 id="xname">玩家</h1>
+        <span>&nbsp;</span>
+        <h1 id="xwin"></h1>
+    </div>
 </div></div>
 
-<div class="page" id="page4"><div class="intro" id="intro3"><div class="text">
+<div class="page" id="page4"><div class="widget intro" id="intro3"><div class="text">
     <h1>接下来……</h1>
     <hr>
     <p>请回忆一下你遇到过的对手</p>
@@ -62,10 +77,13 @@
 </div></div></div>
 
 <div class="page" id="page5"><div class="question" id="question2">
-
+    <img id="comprecall"></img>
+    <div class="widget button" id="button1">出现过，击败了</div>
+    <div class="widget button" id="button2">出现过，没击败</div>
+    <div class="widget button" id="button3">没出现过</div>
 </div></div>
 
-<div class="page" id="page6"><div class="intro" id="intro4"><div class="text">
+<div class="page" id="page6"><div class="widget intro" id="intro4"><div class="text">
     <h1>完成了！</h1>
     <hr>
     <p>这是我们的一个小实验，用来探究大脑对“任务”的记忆</p>

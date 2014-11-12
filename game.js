@@ -71,6 +71,17 @@ $(function () {
     $("#xround").text(round);
     $("#xwin").text(win);
 
+    function gameviewupd() {
+        $("#xcomp1").text(comp);
+        $("#xcomp2").text(nowcomp);
+        // $("#compinfo #xname").text("");
+        $("#compinfo #xwin").text(compwin);
+        // $("#yourinfo #xname").text("");
+        $("#yourinfo #xwin").text(youwin);
+    }
+
+    gameviewupd();
+
     function gameupd(winmode) {
         nowround += 1;
 
@@ -96,11 +107,6 @@ $(function () {
             stepupd(step + 1);
         }
 
-        $("#xcomp1").text(comp);
-        $("#xcomp2").text(nowcomp);
-        $("#compinfo #xname").text("");
-        $("#compinfo #xwin").text(compwin);
-        $("#yourinfo #xname").text("");
-        $("#yourinfo #xwin").text(youwin);
+        gameviewupd();
     }
 });

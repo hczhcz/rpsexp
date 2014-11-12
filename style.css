@@ -39,6 +39,25 @@ hr {
     height: 100%;
 }
 
+.widget {
+    background: #F0F0FF;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    overflow: hidden;
+}
+
+.button {
+    position: absolute;
+}
+
+.floatl * {
+    float: left;
+}
+
+.floatr * {
+    float: right;
+}
+
 .intro {
     position: absolute;
     display: table;
@@ -48,10 +67,6 @@ hr {
     bottom: 15%;
     width: 60%;
     height: 70%;
-    background: #F0F0FF;
-    background: rgba(255, 255, 255, 0.5);
-    text-align: center;
-    overflow: hidden;
 }
 
 .text {
@@ -66,6 +81,65 @@ hr {
     right: 5%;
     top: 5%;
     bottom: 5%;
-    padding: 32px;
+}
+
+.postop {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 70%;
+    margin: 32px;
     overflow: hidden;
+}
+
+.poscenter {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 30%;
+    bottom: 30%;
+    margin: 32px;
+    overflow: hidden;
+}
+
+.posbottom {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 70%;
+    bottom: 0%;
+    margin: 32px;
+    overflow: hidden;
+}
+
+.postop * {
+    vertical-align: text-top;
+}
+
+.poscenter * {
+    vertical-align: middle;
+}
+
+.posbottom * {
+    vertical-align: text-bottom;
+}
+
+.smallimg {
+    max-height: 64px;
+    height: 100%;
+}
+
+.handl {
+    float: left;
+    max-width: 30%;
+    max-height: 100%;
+    margin: 0% 10%;
+}
+
+.handr {
+    float: right;
+    max-width: 30%;
+    max-height: 100%;
+    margin: 0% 10%;
 }
