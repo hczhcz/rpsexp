@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="zh-cn" />
+    <meta name="author" content="hcz" />
+
+    <!--[if lte IE 8]>
+    <script src="html5.js"></script>
+    <![endif]-->
+
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+
+    <title>Game</title>
+
+</head>
+
+<body>
+
+<script src="game.js"></script>
+
+<div class="page" id="page1"><div class="intro" id="intro1"><div class="text">
+    <h1>游戏说明</h1>
+    <hr>
+    <p>你将与至少<span id="xcomp"></span>个对手对战“石头剪刀布”</p>
+    <p>每一轮你需要在<span id="xround">局中做到</span><span id="xwin"></span>胜，才能击败这个对手</p>
+    <br>
+    <p><i>（点击继续...）</i></p>
+</div></div></div>
+
+<div class="page" id="page2"><div class="intro" id="intro2"><div class="text">
+    <h1>记住！有个小诀窍</h1>
+    <hr>
+    <p>你可能会多次遇到同一个对手，再次遇到时ta的出手动作是不会改变的</p>
+    <p>只需要记住ta是如何出手的，就可以在下一次相遇时获胜了！</p>
+    <br>
+    <p><i>（点击继续...）</i></p>
+</div></div></div>
+
+<div class="page" id="page3"><div class="question" id="question1">
+    <div id="gameinfo">还有<span id="xcomp2"></span>/<span id="xcomp1"></span>个对手需要击败</div>
+    <div id="compinfo"><span id="xname"></span><span id="xwin"></span></div>
+    <div id="yourinfo"><span id="xname"></span><span id="xwin"></span></div>
+    <img id="compphoto"></img>
+    <img id="comphand" src="img/r.png"></img>
+    <img id="yourhand" src="img/rr.png"></img>
+    <img id="phand" src="img/pr.png"></img>
+    <img id="shand" src="img/sr.png"></img>
+    <img id="rhand" src="img/rr.png"></img>
+</div></div>
+
+<div class="page" id="page4"><div class="intro" id="intro3"><div class="text">
+    <h1>接下来……</h1>
+    <hr>
+    <p>请回忆一下你遇到过的对手</p>
+    <p>你还记得他们吗？</p>
+    <br>
+    <p><i>（点击继续...）</i></p>
+</div></div></div>
+
+<div class="page" id="page5"><div class="question" id="question2">
+
+</div></div>
+
+<div class="page" id="page6"><div class="intro" id="intro4"><div class="text">
+    <h1>完成了！</h1>
+    <hr>
+    <p>这是我们的一个小实验，用来探究大脑对“任务”的记忆</p>
+    <p>如果你是在网上被邀请参与，请务必将下面的数据串发给我们：</p>
+    <br>
+    <p><span id="xresult"></span></p>
+</div></div></div>
+
+</body>
+
+</html>
